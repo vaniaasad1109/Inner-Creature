@@ -17,8 +17,20 @@
   <label><imput type="radio" name="q2" value="ghost"> Fog and old mansions.</label><br>
   <label><input type="radio" name="q2" value="witch"> Candles and spellbooks.</label><br>
 
-  <button onclick="reveal"()">I am a..</button>
+  <button onclick="reveal()">Grand Reveal!</button>
   <h2 id="result"></h2>
   <p id="description"></p>
+
+let creature = q1.value;
+if (scores[q2.value] > scores[creature]) {
+  creature = q2.value;
+}
+
+let description = {
+  witch: "Girl, what did you put in that potion?",
+  vampire: "Be honest, how many people have you charmed tonight?",
+  ghost: "Um… where exactly are you? I can literally see through you"
+};
+
 </body>
 </html>
